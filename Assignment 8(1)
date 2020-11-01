@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+class Employees
+{ 
+String name,designation;
+int age,salary;
+Scanner sc= new Scanner(System.in);
+							
+void getDetails()
+{ 	
+System.out.println("\nEnter Your name:");		
+name=sc.nextLine();		
+	
+System.out.println("\nEnter Your designation:");		
+designation=sc.nextLine();	
+				
+System.out.println("\nEnter Your age:");		
+age=sc.nextInt();	
+		
+System.out.println("\nEnter Your salary:");		
+salary=sc.nextInt();			
+
+  } 
+
+public void displayDetails()
+{
+System.out.println("\nName of the employee is:"+name);
+System.out.println("\nDesignation of the employee is:"+designation);
+System.out.println("\nAge of the employee is:"+age);
+System.out.println("\nSalary of the employee is:"+salary);                
+}
+
+public static void main(String args[])
+{ 	
+Employees e1 = new Employees();
+Employees e2 = new Employees();
+e1.getDetails();
+e1.displayDetails();
+ 	
+e2.getDetails();
+e2.displayDetails();
+}
+}
+
+Output:
+
+Enter Your name: Farzana
+Enter Your designation: Programmer	
+Enter Your age: 25
+Enter Your salary: 50000
+
+Name of the employee is: Farzana
+Designation of the employee is: Programmer
+Age of the employee is: 25
+Salary of the employee is:50000
+                
+Enter Your name: Muheed
+Enter Your designation: Senior Programmer	
+Enter Your age: 25
+Enter Your salary: 80000
+
+Name of the employee is: Muheed
+Designation of the employee is: Senior Programmer
+Age of the employee is: 25
+Salary of the employee is:80000
+                
+		
+		
+
+
+
