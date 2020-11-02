@@ -1,0 +1,83 @@
+
+
+import java.util.Scanner; 
+
+class Employee
+{
+String name,designation;
+int age,salary;
+Scanner sc= new Scanner(System.in);
+						
+void getDetails()
+{
+System.out.println("\nEnter Your name:");
+name=sc.nextLine();			
+System.out.println("\nEnter Your designation:");		
+designation=sc.nextLine();			
+System.out.println("\nEnter Your age:");	
+age=sc.nextInt();			
+System.out.println("\nEnter Your salary:");	
+salary=sc.nextInt();			 
+}
+    
+public void displayDetails()
+{
+System.out.println("\nName of the employee is:"+name);
+System.out.println("\nDesignation of the employee is:"+designation);
+System.out.println("\nAge of the employee is:"+age);
+System.out.println("\nSalary of the employee is:"+salary);
+}     
+}
+
+class Principal extends Employee
+{ 
+Principal() 
+{ 
+System.out.println("Employee: Principal");
+}
+}
+
+class HOD extends Employee 
+{
+HOD() 
+{
+System.out.println("Employee: HOD");
+}
+}
+     
+class Teacher extends Employee
+{ 
+Teacher() 
+{ 
+System.out.println("Employee: Teacher"); 
+} 
+}
+    
+class Accountant extends Employee
+{
+Accountant()
+{
+System.out.println("Employee: Accountant");
+}
+}
+
+public class Workers
+{
+public static void main(String[] args) 
+{
+Employee[] emp = new Employee[3];
+
+emp[0] = new Principal();
+emp[0].getDetails();
+emp[0].displayDetails();
+System.out.println("------------------------------------");
+emp[1] = new Teacher();
+emp[1].getDetails();
+emp[1].displayDetails();
+System.out.println("------------------------------------");
+emp[2] = new Accountant();
+emp[2].getDetails();
+emp[2].displayDetails();
+}
+}
+
