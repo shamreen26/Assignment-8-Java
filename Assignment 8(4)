@@ -71,6 +71,7 @@ System.out.println("------------------------------------");
 emp[2] = new Accountant();
 emp[2].getDetails();
 emp[2].displayDetails();
+
 }
 }
 
