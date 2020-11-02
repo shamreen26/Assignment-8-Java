@@ -38,14 +38,6 @@ System.out.println("Employee: Principal");
 }
 }
 
-class HOD extends Employee 
-{
-HOD() 
-{
-System.out.println("Employee: HOD");
-}
-}
-     
 class Teacher extends Employee
 { 
 Teacher() 
@@ -81,4 +73,41 @@ emp[2].getDetails();
 emp[2].displayDetails();
 }
 }
+
+
+
+Output:
+
+Employee: Principal
+Enter Your name: Farzana
+Enter Your designation: Principal	
+Enter Your age: 30
+Enter Your salary: 100000
+
+Name of the employee is: Farzana
+Designation of the employee is: Principal
+Age of the employee is: 30
+Salary of the employee is: 100000
+-------------------------------------------------
+Employee: Teacher
+Enter Your name: Shameer
+Enter Your designation: Teacher	
+Enter Your age: 25
+Enter Your salary: 50000
+
+Name of the employee is: Shameer
+Designation of the employee is: Teacher
+Age of the employee is: 25
+Salary of the employee is: 50000
+-------------------------------------------------   
+Employee: Accountant
+Enter Your name: Ismail
+Enter Your designation: CA	
+Enter Your age: 28
+Enter Your salary: 40000
+
+Name of the employee is: Ismail
+Designation of the employee is: CA
+Age of the employee is: 28
+Salary of the employee is: 40000
 
