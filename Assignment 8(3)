@@ -1,0 +1,120 @@
+
+
+import java.util.Scanner;
+
+class Student
+{
+String name,clg,dept,year;
+int regno,age;
+Scanner sc = new Scanner(System.in);
+
+public void getDetails()
+{
+System.out.print("\nEnter your Name: ");
+name = sc.nextLine();
+
+System.out.print("\nEnter your college name: ");
+clg = sc.nextLine();
+
+System.out.print("\nEnter your department: ");
+dept = sc.nextLine();
+
+System.out.print("\nEnter your pursuing year: ");
+year = sc.nextLine();
+
+
+System.out.print("\nEnter your register number: ");
+regno = sc.nextInt();
+
+System.out.print("\nEnter the age: ");
+age = sc.nextInt();
+}
+
+public void displayDetails()
+{
+System.out.println("\nStudent name: "+name);
+System.out.println("\nCollege name: "+clg);
+System.out.println("\nDepartment: "+dept);
+System.out.println("\nYear: "+year);
+System.out.println("\nRegister number: "+regno);
+System.out.println("\nAge: "+age);
+}
+}
+
+
+public class StudentDetails
+{
+public static void main(String[] args) 
+{ 
+Student[] stud = new Student[3];
+    
+System.out.println("\nStudents Initiative...."); 
+for (int i=0;i<stud.length;i++)
+{ 
+stud[i] = new Student(); 
+stud[i].getDetails();
+System.out.println(); 
+}
+System.out.println("\nStudents info...."); 
+for (int i=0;i<stud.length;i++)
+{ 
+stud[i].displayDetails();
+System.out.println(); 
+}
+} 
+}
+
+Output:
+
+Students Initiative....
+
+Enter your Name: Farzana
+Enter your college name: ABC Engineering College
+Enter your department: Computer Science
+Enter your pursuing year: Final year
+Enter your register number: 101
+Enter your age:20
+
+Enter your Name: Muheed
+Enter your college name: ABC Engineering College
+Enter your department: ECE
+Enter your pursuing year: Third year
+Enter your register number: 321
+Enter your age: 19
+
+Enter your Name: Shameer
+Enter your college name: ABC Engineering College
+Enter your department: EEE
+Enter your pursuing year: Second year
+Enter your register number: 507
+Enter your age: 18
+
+Students Info....
+
+Student name: Farzana
+College name: ABC Engineering College
+Department: Computer Science
+Year: Final year
+Register number: 101
+Age: 20
+
+Student name: Muheed
+College name: ABC Engineering College
+Department: ECE
+Year: Third year
+Register number: 321
+Age: 19
+
+Student name: Shameer
+College name: ABC Engineering College
+Department: EEE
+Year: second year
+Register number: 507
+Age: 18
+
+
+
+
+
+
+
