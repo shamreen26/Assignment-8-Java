@@ -1,0 +1,54 @@
+package Profile;
+
+interface  Profession 
+{
+void displayDetails();
+}
+
+class Doctor implements Profession
+{ 
+public void displayDetails()
+{ 
+System.out.println("\nI am a Doctor"); 
+} 
+}
+
+class Engineer implements Profession
+{
+public void displayDetails()
+{
+System.out.println("\nI am a Engineer");
+}
+}
+  
+class Pilot implements Profession
+{
+public void displayDetails()
+{
+System.out.println("\nI am a Pilot");
+}
+}
+
+
+public class Main
+{
+public static void main(String[] args)
+{  
+Doctor doc = new Doctor();
+doc.displayDetails();
+System.out.println("\n---------------------------------------");
+Engineer eng = new Engineer(); 
+eng.displayDetails(); 
+System.out.println("\n---------------------------------------");
+Pilot plt = new Pilot(); 
+plt.displayDetails(); 
+ }
+ }
+
+Output:
+
+I am a Doctor
+---------------------------------------
+I am a Engineer
+---------------------------------------
+I am a Pilot
